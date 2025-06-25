@@ -1,0 +1,77 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+    /* Căn giữa bằng Flexbox */
+body {
+    display: flex;
+    flex-direction: column; /* Căn các phần tử dọc */
+    justify-content: center; /* Căn giữa ngang */
+    align-items: center;     /* Căn giữa dọc */
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+     background-image: url("../images/background.jpg");
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+}
+h1 {
+    font-family: 'Dancing Script', cursive;
+    color :#f0f0f0;
+    text-align: left;
+    font-size : 20px;
+    padding-left: 5%;
+    }
+.image-container {
+  display: flex;           /* Hiển thị các ảnh nằm ngang */
+  justify-content: center; /* Căn giữa ảnh theo chiều ngang */
+  gap: 16px;               /* Khoảng cách giữa các ảnh */
+  margin: 20px auto;
+  flex-wrap: wrap;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* căn ngang */
+  align-items: center; 
+}
+.image-container img {
+  width: 40%;            /* Hoặc 30%, hoặc auto tùy bạn */
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  opacity: 1;
+}
+.delayed {
+     opacity: 0;
+    transform: translateY(100px);
+    transition: all 2s ease; /* Cho phép hiệu ứng mượt */
+     display: flex; 
+    justify-content: center;
+    }
+.delayed h1 {
+    font-size : 19px;
+    }
+.heart {
+    width:20px;
+    height:20px;
+    margin-top:18px;
+    }
+.image-container { 
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 2s ease; /* Cho phép hiệu ứng mượt */
+    }
+.next-button {
+  padding: 12px 24px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 16px;
+  color: white;
+  background: linear-gradient(to right, #f06292, #ec407a);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  opacity: 0;
+}
